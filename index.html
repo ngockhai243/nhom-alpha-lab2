@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhóm Alpha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0f172a;
+            color: #e5e7eb;
+        }
+        header {
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            padding: 60px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 18px;
+            opacity: 0.95;
+        }
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+        .members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: #111827;
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+        .avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: #1f2933;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            margin: 0 auto 15px;
+            color: #60a5fa;
+            font-weight: bold;
+        }
+        .card h3 {
+            margin: 10px 0 5px;
+            font-size: 20px;
+        }
+        .card p {
+            font-size: 14px;
+            opacity: 0.85;
+        }
+        .about {
+            background: #020617;
+            border-radius: 14px;
+            padding: 40px 30px;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        footer {
+            background: #020617;
+            text-align: center;
+            padding: 25px 15px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Nhóm Alpha</h1>
+    <p>Trang web giới thiệu thành viên nhóm Alpha</p>
+</header>
+
+<section>
+    <h2>Giới thiệu nhóm</h2>
+    <div class="about">
+        <p>
+            Nhóm <strong>Alpha</strong> được thành lập với mục tiêu học tập, làm việc nhóm
+            và phát triển kỹ năng trong lĩnh vực công nghệ thông tin.
+            Các thành viên luôn hỗ trợ lẫn nhau, chia sẻ kiến thức
+            và cùng hướng tới những sản phẩm chất lượng.
+        </p>
+        <p>
+            Trang web này được xây dựng bằng HTML & CSS, phù hợp cho việc demo,
+            trình bày đồ án hoặc triển khai nhanh bằng Docker.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Thành viên nhóm</h2>
+    <div class="members">
+        <div class="card">
+            <div class="avatar">T</div>
+            <h3>Văn Hữu Toàn</h3>
+            <p>Thành viên nhóm Alpha</p>
+        </div>
+        <div class="card">
+            <div class="avatar">K</div>
+            <h3>Phùng Ngọc Khải</h3>
+            <p>Thành viên nhóm Alpha</p>
+        </div>
+        <div class="card">
+            <div class="avatar">Y</div>
+            <h3>Y Ben Bya</h3>
+            <p>Thành viên nhóm Alpha</p>
+        </div>
+        <div class="card">
+            <div class="avatar">M</div>
+            <h3>Cù Huy Mạnh</h3>
+            <p>Thành viên nhóm Alpha</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 | Nhóm Alpha – HTML Landing Page
+</footer>
+
+</body>
+</html>
