@@ -1,4 +1,10 @@
-FROM nginx:alpine
-COPY index.html /usr/share/nginx/html/index.html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+# Sử dụng image Node.js
+FROM node:18-alpine
+WORKDIR /app
+COPY . .
+RUN npm install
+RUN npm run build
+# Sử dụng một server nhỏ để phục vụ file tĩnh
+RUN npm install -g serve
+EXPOSE 8080
+CMD ["serve", "-s", "dist", "-l", "8080"]
